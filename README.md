@@ -1,4 +1,4 @@
-# HMSPush Zygisk
+# MiPush Zygisk
 
 一个用于为应用伪装小米设备的 Magisk/Zygisk 模块，以便于使用 [miPush](https://github.com/iceyoyo/zz.git)
 
