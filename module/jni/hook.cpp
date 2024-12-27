@@ -29,6 +29,10 @@ jstring my_native_get(JNIEnv *env, jclass clazz, jstring keyJ, jstring defJ) {
         hooked_result = env->NewStringUTF("CN");
     } else if (strcmp(key, "ro.miui.cust_variant") == 0) { // ro.miui.cust_variant=cn
         hooked_result = env->NewStringUTF("cn");
+    }else if (strcmp(key, "ro.product.model") == 0) { // ro.product.model=407FRK8EC
+        hooked_result = env->NewStringUTF("2407FRK8EC");
+    }else if (strcmp(key, "ro.product.marketname") == 0) { // ro.product.marketname=Redmi K70 Ultra
+        hooked_result = env->NewStringUTF("Redmi K70 Ultra");
     }
 
     env->ReleaseStringUTFChars(keyJ, key);
